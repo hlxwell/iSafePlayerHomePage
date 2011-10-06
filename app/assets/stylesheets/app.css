@@ -1,0 +1,120 @@
+/* section: preview 
+---------------------------------------------- */
+#application #preview {
+  margin: 0 0 20px 0;
+}
+
+#application #preview img {
+  display: block;
+}
+/* ------------------------------------------- */
+
+/* section: signup
+---------------------------------------------- */
+#application #download {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 10px 0 50px 0;
+  padding: 10px 0 8px 0;
+}
+
+#application #download {
+  text-align: center;
+}
+
+#application #download small {
+  color: #8b8b8b;
+  display: block;
+  font-size: 11px;
+  margin: 3px 0 0 0;
+}
+
+
+#application #footer_download {
+  border-top: 1px solid #e5e5e5;
+  margin: 0px;
+  padding: 10px 0 8px 0;
+}
+
+#application #footer_download {
+  text-align: center;
+}
+
+#application #footer_download h2 {
+  margin: 0 0 15px 0;
+}
+
+#application #footer_download small {
+  color: #8b8b8b;
+  display: block;
+  font-size: 11px;
+  margin: 3px 0 0 0;
+}
+
+/* ------------------------------------------- */
+
+/* section: features
+---------------------------------------------- */
+#application #features {
+  margin: 0 0 50px 0;
+}
+
+#application #features article {
+  margin: 0 0 50px 0;
+}
+
+#application #features aritcle .left {
+  margin: 0 60px 0 0;
+}
+
+#application #features article section p {
+  line-height: 24px;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+#application #features article aside img {
+  display: block;
+}
+
+#application #features article ul {
+  margin: 0 0 24px 0;
+  padding: 0 0 0 16px;
+}
+
+#application #features article ul:last-child {
+  margin: 0 0 0 0;
+}
+
+#application #features article ul li {
+  line-height: 24px;
+  list-style: disc;
+  margin: 0 0 6px 0;
+  text-align: justify;
+}
+
+
+#application #features #what .left {
+  width: 550px;
+}
+
+#application #features #what .right {
+  width: 250px;
+}
+
+#application #features #how .left {
+  width: 550px;
+}
+
+#application #features #how .right {
+  width: 250px;
+}
+
+#application #features #why .left {
+  width: 550px;
+}
+
+#application #features #why .right {
+  width: 250px;
+}
+
+/* ------------------------------------------- */

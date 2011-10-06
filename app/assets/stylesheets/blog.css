@@ -1,0 +1,222 @@
+/* section: content
+---------------------------------------------- */
+#blog .content {
+  float: left;
+  margin: 0 60px 0 0;
+  width: 540px;
+}
+
+#blog .content article {
+  margin: 0 0 50px 0;
+}
+
+#blog .content article:last-child {
+  margin: 0 0 0 0;
+}
+
+#blog .content article hgroup {
+  margin: 0 0 30px 0;
+}
+
+#blog .content article hgroup h2 {
+  margin: 0 0 5px 0;
+}
+
+#blog .content article hgroup h2 a:link, #blog .content article hgroup h2 a:visited {
+  color: #2c2c2c;
+}
+
+#blog .content article hgroup h2 a:hover, #blog .content article hgroup h2 a:active {
+  color: #8b8b8b;
+}
+
+#blog .content article hgroup h2 + p {
+  color: #8b8b8b;
+  font-family: "Lucida Grande";
+  font-size: 12px;
+}
+
+#blog .content article hgroup h2 + p .tweet {
+  position: relative;
+  top: 5px;
+}
+
+#blog .content article section p {
+  line-height: 24px;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+#blog .content article section p sup {
+  font-size: .8em;
+  vertical-align: super;
+}
+
+#blog .content article section p code {
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  font-family: monospace;
+  padding: 0 4px;
+}
+
+#blog .content article section p:last-child {
+  margin: 0 0 0 0;
+}
+
+#blog .content article section ul {
+  margin: 0 0 24px 0;
+  padding: 0 0 0 16px;
+}
+
+#blog .content article section ul:last-child {
+  margin: 0 0 0 0;
+}
+
+#blog .content article section ul li {
+  line-height: 24px;
+  list-style: disc;
+  margin: 0 0 6px 0;
+  text-align: justify;
+}
+
+#blog .content article section pre {
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  margin: 0 0 24px 0;
+  padding: 8px;
+}
+
+#blog .content article section pre code {
+  font-family: monospace;
+}
+
+#blog .content article section .footnotes {
+  border-top: 1px solid #e5e5e5;
+  color: #999;
+  font-size: 11px;
+  padding: 12px 0 0 0;
+}
+
+#blog .content article section .footnotes hr {
+  display: none;
+}
+
+#blog .content article section .footnotes ol {
+  list-style: decimal;
+  padding: 0 0 0 14px;
+}
+
+#blog .content article section .footnotes ol li {
+  margin: 0 0 12px 0;
+}
+
+#blog .content article section .footnotes ol li:last-child {
+  margin: 0;
+}
+
+#blog .content article section .footnotes ol li p {
+  margin: 0;
+}
+
+#blog .content article .more, #blog .content article .author {
+  color: #8b8b8b;
+  font-family: "Lucida Grande";
+  font-size: 12px;
+  margin: 24px 0 0 0;
+}
+/* ------------------------------------------- */
+
+/* section: sidebar
+---------------------------------------------- */
+#blog aside {
+  float: left;
+  font-size: 12px;
+  width: 220px;
+}
+
+#blog aside .tweets {
+  background: #eee;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0 0 30px 0;
+  padding: 3px;
+}
+
+#blog aside .tweets .inner {
+  background: -moz-linear-gradient(90deg, #f9f9f9, #fafafa) #fafafa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#f9f9f9)) #fafafa;
+  border: 1px solid #d9d9d9;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #666;
+  font-size: 11px;
+}
+
+#blog aside .tweets .inner h3 {
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 12px;
+  margin: 0;
+  padding: 8px;
+}
+
+#blog aside .tweets .inner h3 a:link, #blog aside .tweets .inner h3 a:visited {
+  background: url(/images/twitter_logo.png) right center no-repeat;
+  color: #333;
+  display: block;
+  font-weight: bold;
+}
+
+#blog aside .tweets .inner h3 a:hover, #blog aside .tweets .inner h3 a:active {
+  color: #666;
+}
+
+#blog aside .tweets .inner p {
+  padding: 8px;
+  text-align: center;
+}
+
+#blog aside .tweets .inner #tweets ul li {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 8px;
+}
+
+#blog aside .tweets .inner #tweets ul li:last-child {
+  border: 0;
+}
+
+#blog aside .tweets .inner #tweets ul li .tweet_text {
+  display: block;
+  line-height: 16px;
+  margin: 0 0 4px 0;
+  word-wrap: break-word;
+}
+
+#blog aside .tweets .inner #tweets ul li .tweet_time {
+  display: block;
+  margin: 0 0 4px 0;
+  text-align: right;
+}
+
+#blog aside .tweets .inner #tweets ul li .tweet_time a:link, #blog aside .tweets .inner #tweets ul li .tweet_time a:visited {
+  color: #999;
+  font-style: italic;
+}
+
+#blog aside .tweets .inner #tweets ul li .tweet_time a:hover, #blog aside .tweets .inner #tweets ul li .tweet_time a:active {
+  color: #666;
+}
+
+#blog aside .archive {
+  margin: 0 0 30px 0;
+}
+
+#blog aside .archive ul li {
+  line-height: 24px;
+}
+
+#blog aside .bookmarks ul li {
+  line-height: 24px;
+}
+/* ------------------------------------------- */

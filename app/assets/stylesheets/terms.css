@@ -1,0 +1,51 @@
+/*
+
+title: terms css
+author: maximilian schoening @ bylinebreak.com
+
+*/
+
+/* section: terms
+---------------------------------------------- */
+#terms .content h2 {
+  margin: 0 0 15px 0;
+}
+
+#terms .content h3 {
+  margin: 0 0 10px 0;
+}
+
+#terms .content p {
+  line-height: 20px;
+  margin: 0 0 20px 0;
+  text-align: justify;
+}
+
+#terms .content ul {
+  margin: 0 0 24px 0;
+  padding: 0 0 0 24px;
+}
+
+#terms .content ol {
+  margin: 0 0 24px 0;
+  padding: 0 0 0 24px;
+}
+
+#terms .content ul:last-child, #terms .content ol:last-child {
+  margin: 0 0 0 0;
+}
+
+#terms .content ul li {
+  line-height: 24px;
+  list-style: disc;
+  margin: 0 0 16px 0;
+  text-align: justify;
+}
+
+#terms .content ol li {
+  line-height: 24px;
+  list-style: decimal;
+  margin: 0 0 16px 0;
+  text-align: justify;
+}
+/* ------------------------------------------- */

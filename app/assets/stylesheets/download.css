@@ -1,0 +1,57 @@
+/*
+
+title: download css
+author: maximilian schoening @ bylinebreak.com
+
+*/
+
+/* section: download
+---------------------------------------------- */
+#download ul li {
+  background-repeat: no-repeat;
+  line-height: 32px;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 50px;
+}
+
+#download ul li span {
+  color: #8b8b8b;
+}
+
+#download ul li a {
+  background: url("../images/download_button_download.png") no-repeat;
+  display: block;
+  height: 22px;
+  margin: 3px 0 0 0;
+  text-indent: -99999px;
+  width: 90px;
+}
+
+#download ul li a:hover {
+  background-position: 0 -22px;
+}
+
+#download ul li a:active {
+  background-position: 0 -44px;
+}
+
+#download #app {
+  margin: 0 0 40px 0;
+}
+
+#download #app li {
+  background-image: url("../images/download_cloud_icon.png");
+}
+
+#download #raindrops {
+  margin: 0 0 40px 0;
+}
+
+#download #raindrops li {
+  background-image: url("../images/download_raindrop_icon.png");
+}
+
+#download #plugins #courier {
+  background-image: url("../images/download_courier_plugin_icon.png");
+}
+/* ------------------------------------------- */

@@ -1,0 +1,118 @@
+body {
+  background: #fff;
+  color: #2c2c2c;
+  font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+  font-size: 12px;
+}
+
+/* section: headers
+---------------------------------------------- */
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+  font-size: 20px;
+  margin: 0 0 30px 0;
+}
+
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+h4 {
+  font-weight: bold;
+}
+/* ------------------------------------------- */
+
+/* section: links
+---------------------------------------------- */
+a:link, a:visited {
+  color: #1c4fad;
+  text-decoration: none;
+  -webkit-transition: color .2s linear;
+}
+
+a:hover, a:active {
+  color: #c00;
+}
+/* ------------------------------------------- */
+
+/* section: wrapper
+---------------------------------------------- */
+#wrapper {
+  margin: 50px auto;
+  width: 820px;
+}
+/* ------------------------------------------- */
+
+/* section: header
+---------------------------------------------- */
+header {
+  margin: 0 0 50px;
+}
+
+header h1 a {
+  background: url("/assets/logo.png") no-repeat;
+  display: block;
+  height: 50px;
+  text-indent: -99999em;
+  width: 250px;
+}
+
+header nav ul li {
+  color: #8b8b8b;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 10px 30px 0 0;
+}
+
+header nav ul li.disabled {
+  color: #e5e5e5;
+}
+
+header nav ul li a:link, header nav ul li a:visited {
+  color: #2c2c2c;
+}
+
+header nav ul li a:hover, header nav ul li a:active {
+  color: #8b8b8b;
+}
+/* ------------------------------------------- */
+
+/* section: container
+---------------------------------------------- */
+.container {
+  font-size: 13px;
+  margin: 0 0 50px 0;
+}
+/* ------------------------------------------- */
+
+/* section: footer
+---------------------------------------------- */
+footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 0 0 0;
+}
+
+footer ul li {
+  border-right: 1px solid #e5e5e5;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+}
+
+footer ul li.disabled {
+  color: #e5e5e5;
+}
+
+footer ul li a:link, footer ul li a:visited {
+  color: #2c2c2c;
+  font-weight: bold;
+}
+
+footer ul li a:hover, footer ul li a:active {
+  color: #8b8b8b;
+}
+/* ------------------------------------------- */

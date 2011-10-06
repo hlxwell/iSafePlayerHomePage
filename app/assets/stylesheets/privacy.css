@@ -1,0 +1,32 @@
+/* section: privacy
+---------------------------------------------- */
+#privacy .content h2 {
+  margin: 0 0 15px 0;
+}
+
+#privacy .content h3 {
+  margin: 0 0 10px 0;
+}
+
+#privacy .content p {
+  line-height: 20px;
+  margin: 0 0 20px 0;
+  text-align: justify;
+}
+
+#privacy .content ul {
+  margin: 0 0 24px 0;
+  padding: 0 0 0 24px;
+}
+
+#privacy .content ul:last-child {
+  margin: 0 0 0 0;
+}
+
+#privacy .content ul li {
+  line-height: 24px;
+  list-style: disc;
+  margin: 0 0 6px 0;
+  text-align: justify;
+}
+/* ------------------------------------------- */
