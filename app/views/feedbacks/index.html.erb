@@ -1,0 +1,18 @@
+<div class='container' id='feedback'>
+  <section>
+    <p>
+      <h2>User Feedback</h2>
+
+      <% @feedbacks.each do |feedback| %>
+        <div class="feedback_item">
+          <div class="title"><b><%= feedback.name %></b> <small><%= feedback.created_at.to_s(:db) %></small></div>
+          <div><%= feedback.content %></div>
+        </div>
+      <% end %>
+
+      <%= paginate @feedbacks %>
+
+      <div class="new_feedback"><%= link_to 'Have some cool idea?', new_feedback_path %></div>
+    </p>
+  </section>
+</div>

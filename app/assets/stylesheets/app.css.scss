@@ -1,3 +1,6 @@
+$left-width: 550px;
+$right-width: 250px;
+
 /* section: preview 
 ---------------------------------------------- */
 #application #preview {
@@ -93,28 +96,17 @@
 }
 
 
-#application #features #what .left {
-  width: 550px;
+#application #features .left {
+  width: $left-width;
 }
 
-#application #features #what .right {
-  width: 250px;
+#application #features .right {
+  width: $right-width;
 }
 
-#application #features #how .left {
-  width: 550px;
+#application #features article ul li p {
+  color: #034;
 }
 
-#application #features #how .right {
-  width: 250px;
-}
-
-#application #features #why .left {
-  width: 550px;
-}
-
-#application #features #why .right {
-  width: 250px;
-}
 
 /* ------------------------------------------- */

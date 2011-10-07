@@ -1,0 +1,67 @@
+#feedback {
+  h2 {
+    text-align: center;
+  }
+
+  div.feedback_item {
+    width: 512px;
+    margin: 0 auto 20px auto;
+  
+    div.title {
+      margin-bottom: 5px;
+    }
+  }
+
+  div.new_feedback {
+    width: 512px;
+    margin: 20px auto 20px auto;
+    a {
+      font-size: 20px;
+    }
+  }
+
+  .pagination {
+    margin: auto;
+    width: 512px;
+  }
+
+  small {
+    font-size: 9px;
+  }
+
+  form {
+    width: 512px;
+    margin: auto;
+
+    label {
+      font-size: 16px;
+      font-width: 5px;
+    }
+
+    small {
+      font-size: 9px;
+    }
+
+    input[type="text"], input[type="submit"], textarea {
+      padding: 5px;
+      margin: 5px 0;
+      border:1px solid #cccccc;
+      width: 500px;
+    }
+
+    input[type="checkbox"] {
+    margin-bottom: 5px;
+    }
+
+    input[type="submit"] {
+      width: 200px;
+      float: right;
+    }
+
+    .actions a {
+      font-size: 20px;
+      margin-top: 6px;
+      float: left;
+    }
+  }
+}

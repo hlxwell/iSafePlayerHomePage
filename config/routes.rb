@@ -1,5 +1,7 @@
 ISafePlayerHomePage::Application.routes.draw do
-  get "home/index"
+  resources :feedbacks
+
+  get "about" => "home#about", :as => :about
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ISecurePlayerHomePage::Application.load_tasks
+ISafePlayerHomePage::Application.load_tasks
