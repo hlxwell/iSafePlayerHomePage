@@ -1,14 +1,24 @@
 <script>
   $(function(){
-    $("#show_video").click(function(){
+    $("#show_vimeo_video").click(function(){
       $("#vimeo a").hide()
-      $("#vimeo iframe").show()      
+      $("#vimeo iframe").show()
+    })
+
+    $("#show_youku_video").click(function(){
+      $("#youku a").hide()
+      $("#youku embed").show()
     })
   })
 </script>
-<div class='container' id='application'>  
-  <section id="vimeo">
-    <a href="javascript:void(0)" id="show_video"><img src="/assets/preview.jpg"/></a>
+<div class='container' id='application'>
+  <section id="youku">
+    <a href="javascript:void(0)" id="show_youku_video"><img src="/assets/preview.jpg"/></a>
+    <embed style="display:none" src="http://player.youku.com/player.php/sid/XMzEwNjc3NjA4/v.swf" allowFullScreen="true" quality="high" width="820" height="502" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+  </section>
+
+  <section id="vimeo" style="display:none">
+    <a href="javascript:void(0)" id="show_vimeo_video"><img src="/assets/preview.jpg"/></a>
     <iframe style="display:none" src="http://player.vimeo.com/video/30184897?title=0&amp;byline=0&amp;portrait=0" width="820" height="462" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
   </section>
 
