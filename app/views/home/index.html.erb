@@ -1,18 +1,15 @@
-<%= javascript_include_tag "jwplayer/jwplayer" %>
-<script type="text/javascript">
+<script>
   $(function(){
-    jwplayer("preview").setup({
-			flashplayer: "/assets/jwplayer/player.swf",
-			file: "/assets/video.m4v",
-			image: "/assets/preview.jpg",
-			width: "820",
-			height: "462"
-		});
-  });
+    $("#show_video").click(function(){
+      $("#vimeo a").hide()
+      $("#vimeo iframe").show()      
+    })
+  })
 </script>
-
-<div class='container' id='application'>
-  <section id='preview'>
+<div class='container' id='application'>  
+  <section id="vimeo">
+    <a href="javascript:void(0)" id="show_video"><img src="/assets/preview.jpg"/></a>
+    <iframe style="display:none" src="http://player.vimeo.com/video/30184897?title=0&amp;byline=0&amp;portrait=0" width="820" height="462" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
   </section>
 
   <section id='download'>
