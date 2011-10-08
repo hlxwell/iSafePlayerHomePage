@@ -1,5 +1,2 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  video_html: "<ifrae class='video_code' style='display:none' src='http://player.vimeo.com/video/30184897?title=0&amp;byline=0&amp;portrait=0' width='820' height='462' frameborder='0' webkitAllowFullScreen allowFullScreen></iframe>"
