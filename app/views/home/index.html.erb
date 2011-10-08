@@ -1,12 +1,12 @@
 <div class='container' id='application'>
   <section id="video">
-    <a href="javascript:void(0)" id="show_video"><img src="/assets/preview.jpg"/></a>
+    <a href="javascript:void(0)" id="show_video"><%= image_tag "preview.jpg" %></a>
     <%= t "video_html" %>
   </section>
 
   <section id='download'>
     <p>
-      <a href='#'><img alt='Get it on the AppStore' src='/assets/app-store.png' width='200' /></a>
+      <a href='#'><%= image_tag "app-store.png", :alt => "Get iSafePlayer on the AppStore", :width => 200 %></a>
       <small>Requires iPhone, iPod 4.0 +</small>
     </p>
   </section>
@@ -18,7 +18,7 @@
         <p><strong>iSafePlayer</strong> is an <strong>anti-theft</strong> music player, which could play those music already in your iPhone and will alarm when your iPhone lose connection with you, like headset been removed, or bluetooth headset lost connection.</p>
       </section>
       <aside class='right'>
-        <img alt='cover' height='' src='/assets/cover.jpg' width='250' />
+        <%= image_tag "cover.jpg", :width => 250 %>
       </aside>
     </article>
 
@@ -66,7 +66,7 @@
         </p>
       </section>
       <aside class='right'>
-        <img alt='iSafePlayer tutorial' height='' src='/assets/tutorial-1.jpg' width='250' />
+        <%= image_tag "tutorial-1.jpg", :width => 250 %>
       </aside>
     </article>
 
@@ -107,11 +107,11 @@
         </p>
       </section>
       <aside class='right'>
-        <img alt='iSafePlayer tutorial' height='' src='/assets/tutorial-2.jpg' width='250' />
+        <%= image_tag "tutorial-2.jpg", :width => 250 %>
         <br/>
-        <img alt='iSafePlayer tutorial' height='' src='/assets/tutorial-3.jpg' width='250' />
+        <%= image_tag "tutorial-3.jpg", :width => 250 %>
         <br/>
-        <img alt='iSafePlayer tutorial' height='' src='/assets/tutorial-4.jpg' width='250' />
+        <%= image_tag "tutorial-4.jpg", :width => 250 %>
       </aside>
     </article>
   </section>
@@ -119,7 +119,7 @@
   <section id='footer_download'>
     <h2>Where can I get it ?</h2>
     <p>
-      <a href='#'><img alt='Get it on the AppStore' src='/assets/app-store.png' width='200' /></a>
+      <a href='#'><%= image_tag "app-store.png", :width => 200 %></a>
       <small>Requires iPhone, iPod 4.0 +</small>
     </p>
   </section>
