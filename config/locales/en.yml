@@ -1,2 +1,18 @@
 en:
   title: iSafePlayer - iPhone anti-theft music player, protect your iphone been stolen.
+  menus:
+    home: Home
+    feedback: Feedback
+  feedbacks:
+    index:
+      user_feedback: User Feedback
+      have_idea: Have some cool idea?
+      no_record: No Feedback.
+    new:
+      new_feedback_title: Any feedback could improve iSafePlayer do better ?
+      create_success: Feedback was successfully created.
+    form:
+      private: won't show to public.
+      want_newsletter: Include me into the newsletter?
+      back_to_list: To see others' ideas?
+      submit: Submit Feedback

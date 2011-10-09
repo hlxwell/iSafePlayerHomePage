@@ -3,7 +3,6 @@ class FeedbacksController < ApplicationController
   # GET /feedbacks.json
   def index
     @feedbacks = Feedback.order("created_at DESC").page(params[:page])
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @feedbacks }
@@ -24,7 +23,7 @@ class FeedbacksController < ApplicationController
 
     respond_to do |format|
       if @feedback.save
-        format.html { redirect_to feedbacks_path, :notice => 'Feedback was successfully created.' }
+        format.html { redirect_to feedbacks_path, :notice => t('.create_success') }
       else
         format.html { render :action => "new" }
       end

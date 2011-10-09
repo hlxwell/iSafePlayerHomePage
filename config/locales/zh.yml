@@ -1,2 +1,34 @@
 zh:
   title: iSafePlayer - 防盗音乐播放器，帮助你免除手机被盗之忧。
+  menus:
+    home: 首页
+    feedback: 反馈
+  activerecord:
+    attributes:
+      feedback:
+        name: 名字
+        content: 反馈内容
+    errors:
+      models:
+        feedback:
+          attributes:
+            email:
+              invalid: 错误Email格式
+              blank: 没有输入Email
+            content:
+              blank: 没有输入反馈内容
+            name:
+              blank: 没有输入名字
+  feedbacks:
+    index:
+      user_feedback: 用户反馈
+      have_idea: 你有好点子？
+      no_record: 暂无反馈。
+    new:
+      new_feedback_title: 有任何好的点子能够让我们做的更好吗？
+      create_success: 反馈创建成功。
+    form:
+      private: 保密，不会显示
+      want_newsletter: 发送给我邮件，如果有任何更新?
+      back_to_list: 看看其他人的点子?
+      submit: 提交反馈

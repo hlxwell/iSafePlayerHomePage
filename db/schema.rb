@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20111007013304) do
     t.string   "name"
     t.string   "email"
     t.text     "content"
+    t.boolean  "want_newsletter"
     t.integer  "parent_id"
     t.datetime "created_at"
     t.datetime "updated_at"

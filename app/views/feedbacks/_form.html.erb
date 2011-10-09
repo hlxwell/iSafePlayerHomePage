@@ -1,8 +1,7 @@
 <%= form_for(@feedback) do |f| %>
   <% if @feedback.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@feedback.errors.count, "error") %> prohibited this feedback from being saved:</h2>
-
+      <strong><%= pluralize(@feedback.errors.count, "error") %> prohibited this feedback from being saved:</strong>
       <ul>
       <% @feedback.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -16,7 +15,7 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :email %> <small>( won't show to public. )</small><br />
+    <%= f.label :email %> <small>( <%= t ".private" %> )</small><br />
     <%= f.text_field :email %>
   </div>
   <div class="field">
@@ -24,12 +23,12 @@
     <%= f.text_area :content %>
   </div>
   <div class="field">
-    <%= f.check_box :parent_id %>
-    <%= f.label :parent_id, "Include me into the newsletter?" %>
+    <%= f.check_box :want_newsletter %>
+    <%= f.label :want_newsletter, t(".want_newsletter") %>
   </div>
   <br/><br/>
   <div class="actions">
-    <%= link_to "To see others' ideas?", feedbacks_path %>
-    <%= f.submit %>
+    <%= link_to t(".back_to_list"), feedbacks_path %>
+    <%= f.submit t(".submit") %>
   </div>
 <% end %>
