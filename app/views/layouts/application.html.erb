@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>iSafePlayer - protect your iphone been stolen, anti-theft alarm.</title>
+  <title><%= t "footertitle" %></title>
   <meta content='iSafePlayer, iphone, app, anti-theft, player' name='keywords' />
   <meta content='iSafePlayer anti-theft player.' name='description' />
   <link rel="shortcut icon" href="/assets/favicon.ico">
@@ -11,8 +11,8 @@
   <%= csrf_meta_tags %>
 
   <!--[if IE]>
-    <%#= javascript_include_tag "html5/html5" %>
-    <%#= stylesheet_link_tag    "iefix/iefix" %>
+    <%= javascript_include_tag "html5/html5" %>
+    <%= stylesheet_link_tag    "iefix/iefix" %>
   <![endif]-->
 
   <%= render "shared/ga" %>
