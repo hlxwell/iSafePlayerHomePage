@@ -25,7 +25,9 @@ namespace :deploy do
   end
 
   task :init_project do
-    run "cd #{release_path}; ln -s #{shared_path}/production.sqlite3 #{release_path}/db/"
+    run "cd #{release_path}; ln -s #{shared_path}/production.sqlite3 #{release_path}/db/" 
+    run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle install"
+    run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle exec rake db:migrate"
     run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle exec rake assets:precompile"
   end
 end

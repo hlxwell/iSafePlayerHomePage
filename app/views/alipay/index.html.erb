@@ -5,7 +5,7 @@
       <form action='/alipay/pay'>
         <input type="text" name="apple_id" class="text" />
         <div class="notice"><%= flash[:notice] %></div>
-        <input type="hidden" name="charge_amount" class="text" value="0.01" style="margin: 0px" />
+        <input type="hidden" name="charge_amount" class="text" value="20" style="margin: 0px" />
         <%= submit_tag "立刻购买支付20RMB", :confirm => "如果您使用的不是iPhone4将不能使用本软件，是否继续？" %>
       </form>
     </p>

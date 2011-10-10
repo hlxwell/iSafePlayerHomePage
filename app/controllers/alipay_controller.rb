@@ -32,7 +32,7 @@ class AlipayController < ApplicationController
   def done
     @result = ActiveMerchant::Billing::Integrations::Alipay::Return.new(request.query_string)
     if @result.success?
-      UserSession.create(User.find_by_id(@result.order))
+      logger.warn(@result.order)
       render :done
     else
       logger.warn(@result.message)
