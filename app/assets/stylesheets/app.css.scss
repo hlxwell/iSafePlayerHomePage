@@ -109,10 +109,13 @@ $right-width: 250px;
 }
 
 #application #title {
-text-align: center;
+  text-align: center;
   width: 100%;
   margin-bottom: 50px;
-  font-size: 30px;
+
+  h1 {
+    font-size: 30px;
+  }
 }
 
 /* ------------------------------------------- */
