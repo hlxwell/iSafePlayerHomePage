@@ -47,3 +47,8 @@ module ISafePlayerHomePage
     config.assets.version = '1.0'
   end
 end
+
+require 'active_merchant'
+require 'active_merchant/billing/integrations/action_view_helper'
+
+ActionView::Base.send(:include, ActiveMerchant::Billing::Integrations::ActionViewHelper)

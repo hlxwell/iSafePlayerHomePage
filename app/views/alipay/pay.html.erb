@@ -1,0 +1,36 @@
+<div class='container' id='alipay'>
+  <section>
+    <h2 style="padding: 10px;">
+      <%= image_tag "alipay_logo.gif" %>
+      <p style="margin-top: 10px">正在转向支付宝，请稍候...</p>
+    </h2>
+
+    <div class="hidden">
+      <% payment_service_for "#{Time.now.to_i+rand(10000)}",
+                             ActiveMerchant::Billing::Integrations::Alipay::ACCOUNT,
+                             :service => :alipay,
+                             :html => { :id => 'payment-form', :method => :get } do |service| %>
+        <% service.total_fee @charge_amount %>
+        <% service.extra_common_param @apple_id %>
+        <% service.seller :email => ActiveMerchant::Billing::Integrations::Alipay::EMAIL %>
+        <% service.error_notify_url url_for(:only_path => false, :action => 'error') %>
+        <% service.notify_url url_for(:only_path => false, :action => 'notify') %>
+        <% service.return_url url_for(:only_path => false, :action => 'done') %>
+        <% service.show_url "http://isafeplayer.com" %>
+        <% service.body "购买 iSafePlayer 应用，共 #{@charge_amount} 元，购买后将以AppleStore Gift形式给到Apple ID:#{@apple_id}" %>
+        <% service.charset "utf-8" %>
+        <% service.service ActiveMerchant::Billing::Integrations::Alipay::Helper::CREATE_DIRECT_PAY_BY_USER %>
+        <% service.payment_type 1 %>
+        <% service.subject "购买 iSafePlayer 应用" %>
+        <% service.sign %>
+      <% end %>
+    </div>
+  </section>
+</div>
+
+<script>
+$(function(){
+  $('#payment-form div').remove();
+  $('#payment-form').submit();
+});
+</script>

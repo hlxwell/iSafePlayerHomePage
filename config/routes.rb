@@ -1,4 +1,10 @@
 ISafePlayerHomePage::Application.routes.draw do
+  get "alipay" => "alipay#index", :as => :alipay
+  get "alipay/pay"
+  post"alipay/notify"
+  get "alipay/done"
+  get "alipay/error"
+
   resources :feedbacks
 
   get "about" => "home#about", :as => :about

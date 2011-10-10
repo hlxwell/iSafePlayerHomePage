@@ -33,3 +33,5 @@ gem 'capistrano'
 # To use debugger
 # gem 'ruby-debug'
 
+gem 'activemerchant', :require => 'active_merchant'
+gem 'activemerchant_patch_for_china'

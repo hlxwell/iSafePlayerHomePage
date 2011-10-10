@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111007013304) do
+ActiveRecord::Schema.define(:version => 20111010144951) do
 
   create_table "feedbacks", :force => true do |t|
     t.string   "name"
@@ -18,6 +18,13 @@ ActiveRecord::Schema.define(:version => 20111007013304) do
     t.text     "content"
     t.boolean  "want_newsletter"
     t.integer  "parent_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "orders", :force => true do |t|
+    t.string   "apple_id"
+    t.string   "trade_no"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
