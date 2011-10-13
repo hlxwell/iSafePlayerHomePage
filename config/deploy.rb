@@ -27,8 +27,8 @@ namespace :deploy do
   task :init_project do
     run "cd #{release_path}; ln -s #{shared_path}/database.yml #{release_path}/config/database.yml"
     run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle install"
-    run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle exec rake db:migrate"
-    run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle exec rake assets:precompile"
+    run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle exec rake db:migrate RAILS_ENV=production"
+    run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle exec rake assets:precompile RAILS_ENV=production"
   end
 end
 after "deploy:symlink", "deploy:init_project"
