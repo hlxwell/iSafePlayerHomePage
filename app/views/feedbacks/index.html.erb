@@ -1,5 +1,5 @@
 <div class='container' id='feedback'>
-  <section>
+  <div>
     <p>
       <h2><%= t ".user_feedback" %></h2>
       <%= show_notice_flash %>
@@ -12,5 +12,5 @@
       <%= paginate @feedbacks %>
       <div class="new_feedback"><%= link_to t('.have_idea'), new_feedback_path %></div>
     </p>
-  </section>
+  </div>
 </div>

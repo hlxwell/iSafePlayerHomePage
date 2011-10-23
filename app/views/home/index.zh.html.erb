@@ -1,10 +1,10 @@
 <div class='container' id='application'>
-  <section id="video">
+  <div id="video">
     <a href="javascript:void(0)" id="show_video"><%= image_tag "preview_cn.jpg" %></a>
     <embed class='video_code' style='display:none' src="http://player.youku.com/player.php/sid/XMzExODg2NDQ4/v.swf" allowFullScreen="true" quality="high" width="820" height="502" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
-  </section>
+  </div>
 
-  <section id='download'>
+  <div id='download'>
     <p>
       <a href='http://itunes.apple.com/us/app/isafeplayer/id471335004?ls=1&mt=8'><%= image_tag "app-store.png", :alt => "Get iSafePlayer on the AppStore", :width => 200 %></a>
       <small>要求 iPhone, iPod 4.0 +</small>
@@ -13,26 +13,34 @@
       <%= link_to image_tag("alipay_button.png"), alipay_path %>
       <small>如果您没有信用卡，可以使用支付宝支付。</small>
     </p>
-  </section>
+  </div>
 
-  <section id="title">
+  <div id="title">
     <h1>“这是我用过最管用的，最实用的防盗软件。”</h1>
-  </section>
+  </div>
 
-  <section id='features'>
-    <article class='clearfix' id="what">
-      <section class='left'>
+  <div id='features'>
+    <div class='aside right'>
+      <%= image_tag "cover.jpg", :width => 250 %>
+      <br/>
+      <%= image_tag "pocket_lock_1_cn.PNG", :width => 250 %>
+      <br/>
+      <%= image_tag "pocket_lock_2_cn.PNG", :width => 250 %>
+      <br/>
+      <%= image_tag "tutorial-1_cn.jpg", :width => 250 %>
+    </div>
+
+    <div class='article clearfix' id="what">
+      <div class='left'>
         <h2>iSafePlayer是什么东西?</h2>
-        <p><strong>iSafePlayer</strong> 是一个<b>防盗</b>音乐播放器，可以播放存放在iPod播放器里的音乐，当你的手机被小偷偷了，或者遗忘带走的时候，它就会立刻大声报警，比如当你在公交车上听音乐的时候，你或许会闭上眼镜小睡一会，小偷会乘次机会拔去耳机，拿走你心爱的iPhone，如果你用的iSafePlayer，恭喜你，它立刻会大叫“抓贼啊”，让你免除手机被盗的痛苦。</p>
-      </section>
-      <aside class='right'>
-        <%= image_tag "cover.jpg", :width => 250 %>
-      </aside>
-    </article>
+        <p>
+          <strong>iSafePlayer</strong> 是一个<b>防盗</b>音乐播放器，可以播放存放在iPod播放器里的音乐，当你的手机被小偷偷了，或者遗忘带走的时候，它就会立刻大声报警，比如当你在公交车上听音乐的时候，你或许会闭上眼镜小睡一会，小偷会乘次机会拔去耳机，拿走你心爱的iPhone，如果你用的iSafePlayer，恭喜你，它立刻会大叫“抓贼啊”，让你免除手机被盗的痛苦。
+        </p>
+      </div>
+    </div>
 
-
-    <article class='clearfix' id="how">
-      <section class='left'>
+    <div class='article clearfix' id="how">
+      <div class='left'>
         <h2>iSafePlayer 是怎么工作的呢 ?</h2>
         <p>
           <h3>如果你</h3>
@@ -69,16 +77,11 @@
             </li>
           </ul>
         </p>
-      </section>
-      <aside class='right'>
-        <%= image_tag "player_cn.jpg", :width => 250 %>
-        <br/>
-        <%= image_tag "tutorial-1_cn.jpg", :width => 250 %>
-      </aside>
-    </article>
+      </div>
+    </div>
 
-    <article class='clearfix' id="why">
-      <section class='left'>
+    <div class='article clearfix' id="why">
+      <div class='left'>
         <h2>为什么 iSafePlayer 最好的防盗 iPhone 应用 ?</h2>
         <p>
           <h3>它针对了一些很典型的被盗的实际情况：</h3>
@@ -112,18 +115,22 @@
             </li>
           </ul>
         </p>
-      </section>
-      <aside class='right'>
-        <%= image_tag "tutorial-2_cn.jpg", :width => 250 %>
-        <br/>
-        <%= image_tag "tutorial-3_cn.jpg", :width => 250 %>
-        <br/>
-        <%= image_tag "tutorial-4_cn.jpg", :width => 250 %>
-      </aside>
-    </article>
-  </section>
+      </div>
+    </div>
 
-  <section id='footer_download'>
+  </div><!-- end of features -->
+
+  <table id="piclist" border="0" cellspacing="5" cellpadding="5">
+    <tr>
+      <td><%= image_tag "tutorial-2_cn.jpg", :width => 250 %></td>
+      <td><%= image_tag "tutorial-3_cn.jpg", :width => 250 %></td>
+      <td><%= image_tag "tutorial-4_cn.jpg", :width => 250 %></td>
+    </tr>
+  </table>
+
+  <div class="clearfix"></div>
+  <br/>
+  <div id='footer_download'>
     <h2>哪里我能买到它呢 ?</h2>
     <p>
       <a href='http://itunes.apple.com/us/app/isafeplayer/id471335004?ls=1&mt=8'><%= image_tag "app-store.png", :width => 200 %></a>
@@ -133,5 +140,5 @@
       <%= link_to image_tag("alipay_button.png"), alipay_path %>
       <small>如果您没有信用卡，可以使用支付宝支付。</small>
     </p>
-  </section>
+  </div>
 </div>

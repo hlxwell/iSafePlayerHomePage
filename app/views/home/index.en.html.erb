@@ -1,34 +1,40 @@
 <div class='container' id='application'>
-  <section id="video">
+  <div id="video">
     <a href="javascript:void(0)" id="show_video"><%= image_tag "preview.jpg" %></a>
     <iframe class='video_code' style='display:none' src="http://player.vimeo.com/video/30378840?title=0&amp;byline=0&amp;portrait=0" width="820" height="462" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
-  </section>
+  </div>
 
-  <section id='download'>
+  <div id='download'>
     <p>
       <a href='http://itunes.apple.com/us/app/isafeplayer/id471335004?ls=1&mt=8'><%= image_tag "app-store.png", :alt => "Get iSafePlayer on the AppStore", :width => 200 %></a>
       <small>Requires iPhone, iPod 4.0 +</small>
     </p>
-  </section>
+  </div>
 
-  <section id="title">
+  <div id="title">
     <h1>"The most practical and useful anti-theft iPhone application I have ever used."</h1>
-  </section>
+  </div>
 
-  <section id='features'>
-    <article class='clearfix' id="what">
-      <section class='left'>
+  <div id='features'>
+    <div class='aside right'>
+      <%= image_tag "cover.jpg", :width => 250 %>
+      <br/>
+      <%= image_tag "pocket_lock_1.PNG", :width => 250 %>
+      <br/>
+      <%= image_tag "pocket_lock_2.PNG", :width => 250 %>
+      <br/>
+      <%= image_tag "tutorial-1.jpg", :width => 250 %>
+    </div>
+
+    <div class='article clearfix' id="what">
+      <div class='left'>
         <h2>What is the iSafePlayer ?</h2>
         <p><strong>iSafePlayer</strong> is an <strong>anti-theft</strong> music player, which could play those music already in your iPhone and will alarm when your iPhone lose connection with you, like headset been removed, or bluetooth headset lost connection.</p>
-      </section>
-      <aside class='right'>
-        <%= image_tag "cover.jpg", :width => 250 %>
-      </aside>
-    </article>
+      </div>
+    </div>
 
-
-    <article class='clearfix' id="how">
-      <section class='left'>
+    <div class='article clearfix' id="how">
+      <div class='left'>
         <h2>How does iSafePlayer work ?</h2>
         <p>
           <h3>If You</h3>
@@ -68,16 +74,11 @@
             </li>
           </ul>
         </p>
-      </section>
-      <aside class='right'>
-        <%= image_tag "player.jpg", :width => 250 %>
-        <br/>
-        <%= image_tag "tutorial-1.jpg", :width => 250 %>
-      </aside>
-    </article>
+      </div>
+    </div>
 
-    <article class='clearfix' id="why">
-      <section class='left'>
+    <div class='article clearfix' id="why">
+      <div class='left'>
         <h2>Why iSafePlayer is the best anti-theft iPhone application ?</h2>
         <p>
           <h3>It's practical</h3>
@@ -111,23 +112,26 @@
             </li>
           </ul>
         </p>
-      </section>
-      <aside class='right'>
-        <%= image_tag "tutorial-2.jpg", :width => 250 %>
-        <br/>
-        <%= image_tag "tutorial-3.jpg", :width => 250 %>
-        <br/>
-        <%= image_tag "tutorial-4.jpg", :width => 250 %>
-      </aside>
-    </article>
-  </section>
+      </div>
+    </div>
 
-<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FiSafePlayer%2F173320026086889&amp;width=820&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=590&amp;appId=42876356856" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:820px; height:590px;" allowTransparency="true"></iframe>
-  <section id='footer_download'>
+  </div> <!-- end of features -->
+
+  <table id="piclist" border="0" cellspacing="5" cellpadding="5">
+    <tr>
+      <td><%= image_tag "tutorial-2_cn.jpg", :width => 250 %></td>
+      <td><%= image_tag "tutorial-3_cn.jpg", :width => 250 %></td>
+      <td><%= image_tag "tutorial-4_cn.jpg", :width => 250 %></td>
+    </tr>
+  </table>
+
+  <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FiSafePlayer%2F173320026086889&amp;width=820&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=590&amp;appId=42876356856" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:820px; height:590px;" allowTransparency="true"></iframe>
+
+  <div id='footer_download'>
     <h2>Where can I get it ?</h2>
     <p>
       <a href='http://itunes.apple.com/us/app/isafeplayer/id471335004?ls=1&mt=8'><%= image_tag "app-store.png", :width => 200 %></a>
       <small>Requires iPhone, iPod 4.0 +</small>
     </p>
-  </section>
+  </div>
 </div>

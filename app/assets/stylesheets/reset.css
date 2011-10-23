@@ -27,7 +27,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 article, aside, figure, footer, header,
 hgroup, menu, nav, section,
-time, mark, audio, video {
+time, mark, audio, video, div {
   background: transparent;
   border: 0;
   font-size: 100%;
@@ -38,7 +38,7 @@ time, mark, audio, video {
 }
 
 /* teach the browser some html5 */
-article, aside, figure, footer, header, hgroup, nav, section {
+article, aside, figure, footer, header, hgroup, nav, section, div {
   display: block;
 }
 
