@@ -9,6 +9,8 @@ ISafePlayerHomePage::Application.routes.draw do
 
   get "about" => "home#about", :as => :about
 
+  get "/callback" => "home#callback"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
