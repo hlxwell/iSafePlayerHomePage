@@ -35,3 +35,5 @@ gem 'capistrano'
 
 gem 'activemerchant', :require => 'active_merchant'
 gem 'activemerchant_patch_for_china'
+
+gem 'omniauth-facebook'

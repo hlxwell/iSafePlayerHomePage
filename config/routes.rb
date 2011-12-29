@@ -11,6 +11,9 @@ ISafePlayerHomePage::Application.routes.draw do
 
   get "/callback" => "home#callback"
 
+  match "/auth/:provider/callback", :to => "home#facebook_callback"
+  match "/auth/failure", :to => "home#callback_failure"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
