@@ -1,0 +1,4 @@
+require_recipe "apache2"
+require_recipe "mysql"
+require_recipe "rails"
+require_recipe "passenger_apache2::mod_rails"
