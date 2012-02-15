@@ -1,3 +1,9 @@
+require "bundler/capistrano"
+$:.unshift(File.expand_path("./lib", ENV["rvm_path"]))
+require "rvm/capistrano"
+set :rvm_ruby_string, "ree"
+set :rvm_type, :system
+
 set :application, "iSafePlayerHomePage"
 set :repository,  "git://github.com/hlxwell/iSafePlayerHomePage.git"
 
@@ -9,9 +15,9 @@ set :deploy_to, "/home/isafeplayer/app"
 set :branch, "master"
 set :rails_env, "production"
 
-role :web, "176.32.68.133"                          # Your HTTP server, Apache/etc
-role :app, "176.32.68.133"                          # This may be the same as your `Web` server
-role :db,  "176.32.68.133", :primary => true # This is where Rails migrations will run
+role :web, "58.215.184.207"                          # Your HTTP server, Apache/etc
+role :app, "58.215.184.207"                          # This may be the same as your `Web` server
+role :db,  "58.215.184.207", :primary => true # This is where Rails migrations will run
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
@@ -26,9 +32,9 @@ namespace :deploy do
 
   task :init_project do
     run "cd #{release_path}; ln -s #{shared_path}/database.yml #{release_path}/config/database.yml"
-    run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle install"
-    # run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle exec rake db:migrate RAILS_ENV=production"
-    # run "cd #{release_path}; /home/isafeplayer/.rvm/gems/ree-1.8.7-2011.03/bin/bundle exec rake assets:precompile RAILS_ENV=production"
+    run "cd #{release_path}; bundle install"
+    run "cd #{release_path}; bundle exec rake db:migrate RAILS_ENV=production"
+    # run "cd #{release_path}; bundle exec rake assets:precompile RAILS_ENV=production"
   end
 end
 after "deploy:symlink", "deploy:init_project"
