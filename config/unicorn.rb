@@ -1,4 +1,4 @@
-worker_processes 4
+worker_processes 2
 app_dir = "/home/isafeplayer/app/current"
 working_directory app_dir
 
