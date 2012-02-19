@@ -24,10 +24,16 @@ role :db,  "58.215.184.207", :primary => true # This is where Rails migrations w
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
-  task :start do ; end
-  task :stop do ; end
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  # unicorn scripts cribbed from https://github.com/daemon/capistrano-recipes/blob/master/lib/recipes/unicorn.rb
+  desc "Restart unicorn"
+  task :restart, :roles => :app do
+    run "kill -USR2 `cat #{shared_path}/pids/unicorn.pid`"
+  end
+  task :stop, :roles => :app do
+    run "kill -QUIT `cat #{shared_path}/pids/unicorn.pid`"
+  end
+  task :start, :roles => :app do
+    run "cd #{current_path} && bundle exec unicorn -E #{rails_env} -D -c #{current_path}/config/unicorn.rb"
   end
 
   task :init_project do
