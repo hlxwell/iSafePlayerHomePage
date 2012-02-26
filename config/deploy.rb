@@ -10,14 +10,14 @@ set :repository,  "git://github.com/hlxwell/iSafePlayerHomePage.git"
 set :scm, :git
 set :keep_releases, 5
 set :use_sudo, false
-set :user, "isafeplayer"
-set :deploy_to, "/home/isafeplayer/app"
+set :user, "app"
+set :deploy_to, "/home/app/app"
 set :branch, "master"
 set :rails_env, "production"
 
-role :web, "58.215.184.207"                          # Your HTTP server, Apache/etc
-role :app, "58.215.184.207"                          # This may be the same as your `Web` server
-role :db,  "58.215.184.207", :primary => true # This is where Rails migrations will run
+role :web, "58.215.160.129"                          # Your HTTP server, Apache/etc
+role :app, "58.215.160.129"                          # This may be the same as your `Web` server
+role :db,  "58.215.160.129", :primary => true # This is where Rails migrations will run
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
