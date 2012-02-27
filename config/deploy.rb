@@ -27,13 +27,14 @@ namespace :deploy do
   # unicorn scripts cribbed from https://github.com/daemon/capistrano-recipes/blob/master/lib/recipes/unicorn.rb
   desc "Restart unicorn"
   task :restart, :roles => :app do
-    run "kill -USR2 `cat #{shared_path}/pids/unicorn.pid`"
+    # run "kill -USR2 `cat #{shared_path}/pids/unicorn.pid`"
   end
   task :stop, :roles => :app do
-    run "kill -QUIT `cat #{shared_path}/pids/unicorn.pid`"
+    # run "kill -QUIT `cat #{shared_path}/pids/unicorn.pid`"
   end
   task :start, :roles => :app do
-    run "cd #{current_path} && bundle exec unicorn -E #{rails_env} -D -c #{current_path}/config/unicorn.rb"
+    run "cd #{current_path} && touch ./tmp/restart.txt"
+    # run "cd #{current_path} && bundle exec unicorn -E #{rails_env} -D -c #{current_path}/config/unicorn.rb"
   end
 
   task :init_project do
