@@ -1,12 +1,12 @@
-# source 'http://rubygems.org'
-source 'http://ruby.taobao.org'
+source 'http://rubygems.org'
+# source 'http://ruby.taobao.org'
 
 gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql'
+gem 'sqlite3'
 
 gem 'json'
 
@@ -28,10 +28,10 @@ gem 'kaminari'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the web server
-gem 'unicorn'
+# gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+# gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug'
